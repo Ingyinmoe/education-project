@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn With Us</title>
+
+    <!-- ---css link--- -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ---font link--- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap" rel="stylesheet">
+
+    <!-- ---font awesome--- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    </head>
+<body>
+
+    <section class="sub-header">
+        <nav>
+            <img src="images/logo.png" alt="">
+            <i class="fas fa-bars" onclick="shownav()"></i>
+            <div class="nav-link" id="NavLink">
+                <i class="fas fa-times" onclick="hidenav()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about-page.html">ABOUT</a></li>
+                    <li><a href="course-page.html">COURSE</a></li>
+                    <li><a href="blog-page.html">BLOG</a></li>
+                    <li><a href="contact-page.html" class="active">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="text-about">
+            <h1>Contact Us</h1>
+        </div>
+    </section>
+
+    <section class="contact-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122196.5673353095!2d96.08053936275357!3d16.844070980772287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1bf642c78f643%3A0x6144abaa0977cf31!2sXtet%20Naing!5e0!3m2!1sen!2smm!4v1641457429686!5m2!1sen!2smm" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <section class="contact-contact">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fas fa-home"></i>
+                    <span>
+                        <h2>BaYintNaung Road</h2>
+                        <p>In Insein Township</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fas fa-phone"></i>
+                    <span>
+                        <h2>+959 793384482</h2>
+                        <p>11am to 11pm</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fas fa-envelope"></i>
+                    <span>
+                        <h2>usermcy47@gmail.com</h2>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="mail.php" method="post">
+                    <input type="text" name="name" placeholder="Enter Your Name" required>
+                    <input type="text" name="email" placeholder="Enter Your Mail" required>
+                    <input type="text" name="subject" placeholder="Enter Your Subject" required>
+                    <textarea rows="5" name="message" placeholder="Enter Message" required></textarea>
+                    <button type="submit">Send Mail</button>
+                </form>
+                <p class="footer-p">This contact form is fully work.(With PHP)</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div>
+            <ul>
+                <li><a href="https://www.facebook.com/LIGHTNING.N16H7N1N6"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                <li><a href="https://github.com/Ingyinmoe"><i class="fab fa-github-square"></i></a></li>
+                <li><a href="#"><i class="fab fa-codepen"></i></a></li>
+            </ul>
+            <hr class="line">
+            <p>Made With By <span><i class="far fa-heart"></i></span> Htoo Arkar Linn</p>
+        </div>
+    </section>
+    
+    <script src="app.js"></script>
+</body>
+</html>
